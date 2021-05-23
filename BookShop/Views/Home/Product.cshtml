@@ -1,0 +1,24 @@
+﻿
+@using BookShop.Models;
+@Model ProductsViewModel
+
+<div class="row">
+    @foreach(var product in Model.Products)
+            {
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                            
+                                <h3>@product.Name</h3>
+                         
+                            <div class="panel-body">
+                                <div class="row">
+                                    <h4 class="text-center">Rs.@product.Amount</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            }
+</div>
+
