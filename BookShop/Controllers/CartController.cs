@@ -23,7 +23,7 @@ namespace BookShop.Controllers
                 products = new List<Product>();
             }
             products.Add(product);
-            Session["CartItems"] = product;
+            Session["CartItems"] = products;
             return PartialView("~/Views/Home/_ProductSuccessModal.cshtml",product);
         }
 
