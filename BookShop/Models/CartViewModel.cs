@@ -1,9 +1,9 @@
-﻿using System;
+﻿using BookShop.BuisnessLayer;
 using System.Collections.Generic;
 
-namespace BookShop.BuisnessLayer
+namespace BookShop.Models
 {
-    public class CartModel
+    public class CartViewModel
     {
         public List<Product> Products { get; set; }
 
@@ -11,8 +11,9 @@ namespace BookShop.BuisnessLayer
 
         public decimal Tax { get; set; }
 
-        public decimal Discount{ get; set; }
+        public decimal Discount { get; set; }
 
         public decimal Total { get; set; }
+
     }
 }

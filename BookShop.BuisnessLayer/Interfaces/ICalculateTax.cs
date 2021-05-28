@@ -8,6 +8,6 @@ namespace BookShop.BuisnessLayer.Interfaces
 {
     public interface ICalculateTax
     {
-        decimal CalculateTax(decimal subtotal);
+        decimal GetTax(decimal subtotal);
     }
 }

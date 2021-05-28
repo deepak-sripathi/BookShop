@@ -19,9 +19,9 @@ namespace BookShop.Controllers
         public ActionResult Product()
         {
             ProductDetails productDetails = new ProductDetails();
-            ProductsViewModel productViewModel = new ProductsViewModel();
-            productViewModel.Products = productDetails.GetProducts();
-            return View(productViewModel);
+            ProductsViewModel productsViewModel = new ProductsViewModel();
+            productsViewModel.Products = productDetails.GetProducts();
+            return View(productsViewModel);
         }
         public ActionResult Contact()
         {

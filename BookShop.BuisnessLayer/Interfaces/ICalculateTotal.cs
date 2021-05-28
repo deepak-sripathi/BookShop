@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookShop.BuisnessLayer.Interfaces
 {
-    interface ICalculateTotal
+   public interface ICalculateTotal
     {
         decimal GetTotal(decimal subtotal, decimal tax, decimal discount);
     }

@@ -9,7 +9,7 @@ namespace BookShop.BuisnessLayer.Implementations
 {
     public class CalculateTax : ICalculateTax
     {
-        decimal ICalculateTax.CalculateTax(decimal subtotal)
+       public decimal GetTax(decimal subtotal)
         {
             return subtotal * 18 / 100;
         }
